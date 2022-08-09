@@ -16,28 +16,28 @@ export const Navbar = () => {
       </div>
 
       <div>
-        <ul className="hidden md:flex">
-          <li>
+        <ul className="hidden md:flex text-xl">
+          <li className="transition ease-out duration-300 transform hover:scale-95 hover:border-b hover:text-[#ccd6f6]">
           <Link  to="home"  smooth={true} offset={50} duration={800} >
           Home
         </Link>
           </li>
-          <li>
+          <li className="transition ease-out duration-300 transform hover:scale-95 hover:border-b hover:text-[#ccd6f6]">
           <Link  to="about"  smooth={true} offset={50} duration={500} >
           About
         </Link>
           </li>
-          <li>
+          <li className="transition ease-out duration-300 transform hover:scale-95 hover:border-b hover:text-[#ccd6f6]">
           <Link  to="skills"  smooth={true} offset={50} duration={500} >
           Skills
         </Link>
           </li>
-          <li>
+          <li className="transition ease-out duration-300 transform hover:scale-95 hover:border-b hover:text-[#ccd6f6]">
           <Link  to="projects"  smooth={true} offset={50} duration={500} >
           Projects
         </Link>
           </li>
-          <li>
+          <li className="transition ease-out duration-300 transform hover:scale-95 hover:border-b hover:text-[#ccd6f6]">
           <Link  to="contact"  smooth={true} offset={50} duration={500} >
           Contact
         </Link>
@@ -80,7 +80,7 @@ export const Navbar = () => {
       </ul>
     
     {/* Social Icons */}
-    <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
+    <div className="hidden lg:flex fixed flex-col top-[35%] left-0 ">
         <ul>
             <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[10px] duration-300 bg-blue-600">
                 <a className="flex justify-between items-center w-full text-gray-300"

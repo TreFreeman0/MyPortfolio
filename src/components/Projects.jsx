@@ -22,8 +22,8 @@ const Projects = () => {
           >
             {/* Hover affect */}
             <div className="opacity-0 group-hover:opacity-100 flex flex-col">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                Project name
+              <span className="text-2xl text-center font-bold text-white tracking-wider">
+                NuCamp
               </span>
               <div className="pt-8  text-center">
                 <a href="/">
@@ -33,7 +33,7 @@ const Projects = () => {
                 </a>
                 <a href="/">
                   <button className=" rounded-lg text-center px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Github
+                    Git
                   </button>
                 </a>
               </div>

@@ -1,5 +1,7 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { Link } from "react-scroll";
+import Typewriter from 'typewriter-effect'
 
 const Home = () => {
   return (
@@ -11,21 +13,35 @@ const Home = () => {
           Trevon Freeman
         </h1>
         <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b0]">
-          I am a web developer.
+          <Typewriter 
+            onInit={(typewriter) => {
+              typewriter.typeString('I am a Software Developer')
+              .pauseFor(2000)
+              // .deleteAll()
+              .start()
+              
+            }}
+            options={{
+              autoStart:true,
+              loop:true
+            }}
+           />
         </h2>
-        <p className="text-[#8892b0] py-4 max-w-[700px]">
-          description goes here
-        </p>
+        
         <div>
+          
           <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-violet-700 hover:border-violet-700">
-            View Work
+           <Link  to="projects" smooth={true} offset={50} duration={500} >
+              View Work
+            </Link>
             <span className="group-hover:rotate-90 duration-300">
-              <HiArrowNarrowRight className="ml-3" />
-            </span>
+            <Link  to="projects" smooth={true} offset={50} duration={500} >
+                <HiArrowNarrowRight className="ml-3" />
+            </Link>
+              </span>
           </button>
         </div>
-        <div className="flex flex-row justify-end">
-        </div>
+        <div className="flex flex-row justify-end"></div>
       </div>
     </div>
   );

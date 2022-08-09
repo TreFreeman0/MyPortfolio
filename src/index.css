@@ -29,3 +29,24 @@
         hsla(242,74%,61%)
     ) !important;
 }
+
+btn-style::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    z-index: -1;
+    background-color: #6d28d9;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 300ms ease-in-out;
+}
+.btn-background-slide:hover::before,
+.btn-background-slide:focus::before {
+    transform: scaleX(1) ;
+}
+.btn-background-slide{
+    z-index: 1;
+}
